@@ -1,0 +1,21 @@
+<!-- HTML DO EXERCÍCIO 1 -->
+<%- include("partials/header") %>
+
+<h1>
+    Baseado na sua idade (<%= userAge %> anos)
+</h1>
+
+<h2>
+  Mensagem:
+    <% if ((userAge >= 0) && (userAge < 15)) { %>
+        <p>É uma criança</p>
+    <% } else if ((userAge >= 15) && (userAge < 30)) { %>
+        <p>É um jovem</p>
+    <% } else if ((userAge >= 30) && (userAge < 60)) { %>
+        <p>É um adulto</p>
+    <% } else if (userAge >= 60) { %>
+        <p>É um idoso</p>
+    <% } else { %>
+        <p>Você ainda não nasceu!</p>
+    <% } %>
+</h2>

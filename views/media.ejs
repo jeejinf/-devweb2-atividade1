@@ -1,0 +1,36 @@
+<!-- HTML DO EXERCÍCIO 2 -->
+<%- include("partials/header") %>
+
+<div>
+    <form action="/media" method="post">
+        <div>
+            <label for="nota1"> Nota 1 (Atividade prática em laboratório):
+                <input name="campoNota1" type="number">
+            </label>
+            <br>
+            <label for="nota2"> Nota 2 (Prova do Semestre):
+                <input name="campoNota2" type="number">
+            </label>
+            <br>
+            <label for="nota3"> Nota 3 (Trabalho teórico):
+                <input name="campoNota3" type="number">
+            </label>
+        </div>
+        <div>
+            <label for="peso1"> Peso 1 (Atividade prática em laboratório):
+                <input name="campoPeso1"  type="number" value="2" readonly disabled>
+            </label>
+            <br>
+            <label for="peso2"> Peso 2 (Prova do Semestre):
+                <input name="campoPeso2" type="number" value="5" readonly disabled>
+            </label>
+            <br>
+            <label for="peso3"> Peso 3 (Trabalho teórico):
+                <input name="campoPeso3" type="number" value="3" readonly disabled>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Realizar a conta">
+        </div>
+    </form>
+</div>
